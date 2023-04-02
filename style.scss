@@ -1,0 +1,36 @@
+
+@import "assets/scss/settings/global";
+@import "assets/scss/helpers/font-kit";
+
+// layout
+// @import "assets/scss/layout/bootstrap";
+// Helpers
+@import "assets/scss/helpers/variables";
+@import "assets/scss/helpers/media-queries";
+@import "assets/scss/helpers/flexbox";
+@import "assets/scss/helpers/mixins";
+
+// Project Default Heading, List Styles, Tables, Form fields and Buttons.
+@import "assets/scss/base/headings";
+@import "assets/scss/base/list-styles";
+@import "assets/scss/base/tables";
+@import "assets/scss/base/buttons";
+@import "assets/scss/base/forms";
+
+// External Liabrary Styles
+@import "assets/scss/components/plugins";
+@import "assets/scss/components/modal";
+
+// Default HTML & Body Settings
+@import "assets/scss/layout/reset";
+
+// Project Styles
+@import "assets/scss/pages/common-styles";
+@import "assets/scss/pages/header";
+@import "assets/scss/pages/banner";
+@import "assets/scss/pages/inner";
+@import "assets/scss/pages/packages";
+@import "assets/scss/pages/socialmenu";
+@import "assets/scss/pages/home";
+@import "assets/scss/pages/footer";
+@import "assets/scss/pages/mediaqueries";

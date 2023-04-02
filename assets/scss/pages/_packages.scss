@@ -1,0 +1,511 @@
+main.packages{
+    .container-ctn{
+        @include min(1600){
+            max-width: 1540px !important;
+        }
+    }
+}
+.bannerSectionPackages{
+    article{
+        background-size: cover;
+        background-position: center center;
+        p{
+            font-size: 18px;
+            font-weight: $fw-600;
+            @include min(1200){
+                font-size: 18px;
+            }
+            @include min(1360){
+                font-size: 22px;
+            }
+            @include min(1440){
+                font-size: 29px;
+            }
+            @include min(1600){
+                font-size: 35px;
+            }
+        }
+    }
+    .bannerText{
+        height: 236px;
+        @include min(992){
+            height: 320px;
+        }
+        @include min(1200){
+            height: 375px;
+        }
+        @include min(1360){
+            height: 424px;
+        }
+        @include min(1440){
+            height: 449px;
+        }
+        @include min(1500){
+            height: 499px;
+        }
+        @include min(1601){
+            height: 595px;
+        }
+        color: $white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase;
+
+    }
+    h1{
+        font-size: 30px!important;
+        @include min(768){
+            font-size: 30px!important;
+        }
+        @include min(1024){
+            font-size: 50px!important;
+        }
+        @include min(1360){
+            font-size: 60px!important;
+        }
+        @include min(1440){
+            font-size: 80px!important;
+        }
+        @include min(1600){
+            font-size: 95px!important;
+            line-height: 90px;
+        }
+        br{
+            @include max(991){
+                display: none;
+            }
+        }
+    }
+
+}
+
+.reachYourHealth{
+    padding: 50px 0px;
+    background-color: $black;
+    color: $white;
+    @include min(1360){
+        padding: 80px 0px;
+    }
+    @include min(1601){
+        padding: 100px 0px;
+    }
+    h2{
+        font-weight: $fw-500;
+        @include min(768){
+            font-size: 30px!important;
+            padding-bottom: 20px;
+
+        }
+        @include min(1200){
+            font-size: 37px!important;
+        }
+        @include min(1600){
+            font-size: 50px!important;
+        }
+    }
+    p{
+        color: #dddddd;
+        @include min(768){
+            font-size: 21px!important;
+        line-height: 35px;
+        }
+    }
+    .row{
+        .col-lg-6:last-child{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    article{
+        width: 100%;
+        @include min(992){
+            width: 85%;
+        }
+        @include min(1200){
+            width: 65%;
+        }
+    }
+    ul {
+        width: 100%;
+        li{
+            font-size: 18px;
+            @include min(768){
+                font-size: 22px;
+            }
+            @include min(1600){
+                font-size: 25px;
+            }
+            color: #fff;
+            border-bottom: 1px solid #dddddd;
+            padding: 20px 0px 20px 40px;
+            @include min(768){
+                padding: 25px 0px 25px 40px;
+            }
+            @include min(992){
+                padding: 30px 0px 30px 40px;
+            }
+            @include min(1440){
+                padding: 35px 0px 35px 40px;
+            }
+            @include min(1600){
+                padding: 40px 0px 40px 50px;
+            }
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                background-image: url(/assets/images/Tick-Icon.svg);
+                background-size: cover;
+                width: 24px;
+                height: 24px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:last-child{
+                border-bottom: unset;
+            }
+        }
+    }
+}
+
+.programsList{
+    padding: 50px 0px;
+    @include min(1360){
+        padding: 80px 0px;
+    }
+    @include min(1601){
+        padding: 100px 0px;
+    }
+    h2{
+        font-size: 25px!important;
+        font-weight: $fw-500;
+        @include min(992){
+            font-size: 28px!important;
+          }
+      @include min(1200){
+        margin-bottom: 20px;
+      }
+      @include min(1360){
+        font-size: 32px!important;
+      }
+    }
+    p{
+        @include min(1360){
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @include min(1440){
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @include min(1601){
+            font-size: 23px;
+            line-height: 35px;
+        }
+    }
+    .row{
+        justify-content: space-around;
+        &:first-child{
+            padding-bottom: 0px;
+            @include min(992){
+                padding-bottom: 50px;
+            }
+            @include min(992){
+                padding-bottom: 60px;
+            }
+            @include min(1200){
+                padding-bottom: 70px;
+            }
+            @include min(1360){
+                padding-bottom: 80px;
+            }
+            @include min(1440){
+                padding-bottom: 110px;
+            }
+            @include min(1600){
+                padding-bottom: 130px;
+            }
+            @include min(1700){
+                padding-bottom: 160px;
+            }
+        }
+    }
+    article{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: -37px;
+            background-image: url(/assets/images/Dumbell-Icon.svg);
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            top: 5px;
+            @include min(992){
+                width: 40px;
+                height: 40px;
+                left: -60px;
+            }
+            @include min(992){
+                width: 44px;
+                height: 44px;
+            }
+            @include min(1200){
+                width: 64px;
+                height: 64px;
+                left: -90px;
+            }
+        }
+        @include min(1600){
+            width: 74%;
+        }
+        @include max(991){
+            width: 88%;
+            margin-left: auto;
+            padding-bottom: 40px;
+        }
+        @include max(768){
+            padding-bottom: 30px;
+        }
+        @include max(767){
+            padding-bottom: 20px;
+        }
+    }
+}
+.midBannerSection{
+    padding: 50px 0px;
+    color: $white;
+    text-align: center;
+    background-size: cover;
+    @include min(1360){
+        padding: 80px 0px;
+    }
+    @include min(1600){
+        padding: 100px 0px;
+    }
+    article{
+        margin: auto;
+        width:90%;
+        @include min(768){
+            width:80%;
+        }
+        @include min(992){
+            width:78%;
+        }
+        @include min(1200){
+            width:75%;
+        }
+        @include min(1360){
+            width:70%;
+        }
+        @include min(1440){
+            width:65%;
+        }
+        @include min(1600){
+            width:57%;
+        }
+    }
+    p{
+        @include min(992){
+            font-size: 18px!important;
+            line-height: 25px;
+
+                }
+        @include min(1440){
+            font-size: 20px!important;
+            line-height: 32px;
+                }
+        @include min(1600){
+            font-size: 22px!important;
+            line-height: 35px;
+                }
+        &:first-child{
+            margin-bottom: 15px;
+            @include min(992){
+                margin-bottom: 25px;
+            }
+            @include min(1360){
+                margin-bottom: 30px;
+            }
+            @include min(1440){
+                margin-bottom: 35px;
+            }
+            @include min(1600){
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+.benefitsPackages{
+    padding: 50px 0px;
+    @include min(1360){
+        padding: 80px 0px;
+    }
+    @include min(1600){
+        padding: 100px 0px;
+    }
+    h2{
+        font-weight: $fw-600;
+        @include min (768){
+            font-size: 30px!important;
+        }
+        @include min(1200){
+        margin-bottom: 30px;
+        font-size: 32px!important;
+
+
+        }
+        @include min(1600){
+            font-size: 35px!important;
+
+        }
+    }
+    article{
+        p{
+            @include min(1200){
+                font-size: 20px;
+            }
+            @include min(1600){
+                font-size: 23px;
+            }
+            line-height: 30px;
+            &:nth-child(2){
+                margin-bottom: 35px;
+            }
+        }
+        margin-bottom: 25px;
+    }
+    ul{
+        li{
+            font-size: 18px!important;
+            font-weight: $fw-400;
+            color: $secondaryColor;
+            margin-left: 40px;
+            margin-bottom: 10px;
+            @include max(1199){
+                line-height: 28px;
+            }
+            @include min(1200){
+                font-size: 20px!important;
+                margin-left: 60px;
+
+            }
+            @include min(1600){
+                margin-bottom: 80px;
+                font-size: 23px!important;
+
+
+            }
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                background-image: url(/assets/images/Tick-Icon2.svg);
+                background-size: cover;
+                width: 25px;
+                height: 25px;
+                @include min(1600){
+                    width: 32px;
+                    height: 32px;
+                }
+                left: -40px;
+                  top: 5px;
+            }
+        }
+    }
+    .listPersonalTraining{
+        @include min(992){
+            display: flex;
+
+        }
+    }
+    figure{
+        position: relative;
+        margin-left: 20px;
+        @include max(991){
+            margin-bottom: 20px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            background-color: $secondaryColor;
+            width: 99%;
+            height: 95%;
+        }
+    }
+    .row{
+        &:last-child{
+            margin-top: 40px;
+        }
+    }
+}
+
+
+.registerForm{
+    background-color: #e7e7e7;
+    padding: 50px 0px;
+    @include min(1360){
+        padding: 80px 0px;
+    }
+    @include min(1601){
+        padding: 100px 0px;
+    }
+    background-image: url(/assets/images/Panther-Overlay.png);
+    background-size: 28%;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    input{
+        width: 100%;
+        border: unset;
+        padding-left: 20px;
+        border-radius: 5px;
+        height: 50px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        @include max(767){
+            font-size: 15px!important;
+        }
+        @include min(768){
+            margin-bottom: 30px;
+        }
+        @include min(1360){
+            height: 60px;
+        }
+    }
+    h2{
+        text-transform: uppercase;
+        font-weight: $fw-500;
+        text-align: center;
+        margin-bottom: 20px;
+        @include min(768){
+            margin-bottom: 45px;
+        } 
+        @include min(1200){
+            font-size: 35px!important;
+        }
+    }
+    .container-ctn{
+        .row{
+            justify-content: center;
+        }
+    }
+    button{
+        background-color: $secondaryColor;
+        color: $white;
+        font-weight: $fw-300;
+        margin: auto ;
+        margin-top: 20px;
+        width: 160px;
+
+        &:hover{
+            color: $secondaryColor!important;
+            background-color: $white!important;
+
+        }
+    }
+}

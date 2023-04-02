@@ -1,0 +1,132 @@
+footer{
+    padding: 25px 0px ;
+    @include min(1360){
+        padding: 40px 0px 60px 0px;
+    }
+
+    @include min(1440){
+        padding: 50px 0px 70px 0px;
+    }
+    @include min(1700){
+        padding: 66px 0px 87px 0px;
+    }
+    .socialMenuFooter{
+        @include max(767){
+            justify-content: center;
+        }
+    }
+    p{
+        font-weight: 500;
+        color: #5f5f5f;
+        @include max(767){
+            text-align: center;
+            margin-top: 15px;
+        }    
+    }
+    .row{
+        justify-content: space-between;
+        @include max(767){
+            flex-direction: column-reverse;
+        }
+        &> div{
+            &:last-child{
+                .row{
+                    div{
+                        display: flex;
+                        justify-content: flex-end;
+                        @include max(767){
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        @include min(768){
+            margin-top: 10x;
+        }
+        @include min(1360){
+            margin-top: 20x;
+        }
+        @include min(1440){
+            margin-top: 30x;
+        }
+        @include min(1700){
+            margin-top: 34px;
+        }
+        @include max(767){
+            margin-top: 0;
+        }
+
+        li a{
+            font-size: 16px;
+            color: #606060;
+            &:hover,&.active{
+                color: $secondaryColor;
+            }
+        }
+    }
+    .socialMenuFooter li{
+        margin-right: 15px;
+    }
+    .FooterMenu{
+        margin-top: 0px;
+
+        li{
+            margin-right: 10px;
+            @include min(768){
+                margin-right: 20px;
+
+            }
+            @include min(1440){
+                margin-right: 45px;
+
+            }
+            @include min(1700){
+                margin-right: 65px;
+
+            }
+            a{
+                text-transform: uppercase;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .FooterMenu-2{
+        li{
+            margin-right: 10px;
+            @include min(768){
+                margin-right: 15px;
+
+            }
+            @include min(1440){
+                margin-right: 30px;
+
+            }
+            @include min(1700){
+                margin-right: 47px;
+
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                font-weight: 500;
+            }
+        }
+    }
+
+    .FooterMenu  a, .FooterMenu-2 a{
+        @include max(360){
+            font-size: 14.5px;
+        }
+        @include max(332){
+            font-size: 13px;
+        }
+    }
+}

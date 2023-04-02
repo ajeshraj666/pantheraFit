@@ -1,0 +1,152 @@
+// Heading Styles
+h1{
+  font-weight: 700;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--global--color-heading);
+  display: block;
+  line-height: 1.2;
+  margin: 0 0 15px;
+  padding: 0;
+
+   
+  a {
+    background-color: transparent;
+    color: inherit;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none !important;
+    &:hover {
+      color: var(--global--color-primary);
+    }
+  }
+  & + p,
+  & + ul,
+  & + ol {
+    margin-top: 12px;
+  }
+  & + blockquote {
+    margin-top: 12px !important;
+  }
+  @include max(1599) {
+    margin-bottom: 10px;
+    & + p,
+    & + ul,
+    & + ol {
+      margin-top: 8px;
+    }
+    & + blockquote {
+      margin-top: 8px !important;
+    }
+  }
+  @include max(767) {
+    margin-bottom: 7px;
+  }
+}
+h1 {
+  @include fontSize(23px);
+  @include min(321) {
+    @include fontSize(26px);
+  }
+  @include min(768) {
+    @include fontSize(35px);
+  }
+  @include min(1200) {
+    @include fontSize(45px);
+  }
+  @include min(1300) {
+    @include fontSize(60px);
+  }
+  @include min(1600) {
+    @include fontSize(60px);
+  }
+  @include min(1700) {
+    @include fontSize(70px);
+  }
+  @include min(1800) {
+    @include fontSize(80px);
+  }
+
+}
+h2 {
+  @include fontSize(22px);
+  @include min(768) {
+    @include fontSize(26px);
+  }
+  @include min(1200) {
+    @include fontSize(26px);
+  }
+  @include min(1300) {
+    @include fontSize(30px);
+  }
+  @include min(1600) {
+    @include fontSize(45px);
+  }
+
+}
+h3,
+h4 {
+  @include fontSize(20px);
+  @include min(768) {
+    @include fontSize(24px);
+  }
+  @include min(1200) {
+    @include fontSize(24px);
+  }
+  @include min(1300) {
+    @include fontSize(28px);
+  }
+  @include min(1600) {
+    @include fontSize(38px);
+  }
+
+}
+h3.hSmall {
+  @include fontSize(20px);
+  @include min(768) {
+    @include fontSize(24px);
+  }
+  @include min(1200) {
+    @include fontSize(24px);
+  }
+  @include min(1600) {
+    @include fontSize(38px);
+  }
+
+}
+h5,
+h6 {
+  @include fontSize(18px);
+
+}
+.section-title {
+  color: var(--global--color-primary);
+  @include fontSize(45px);
+  font-weight: $fw-600;
+  &.sm {
+    @include fontSize(38px);
+  }
+  &.lg {
+    @include fontSize(78px);
+  }
+  @include max(1599) {
+    @include fontSize(40px);
+    &.sm {
+      @include fontSize(34px);
+    }
+  }
+}
+

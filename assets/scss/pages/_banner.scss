@@ -1,0 +1,86 @@
+.bannerWrapper{
+    article{
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        height: 350px;
+        @include min(768){
+            height: 387px;
+        }
+        @include min(1024){
+            height: 519px;
+        }
+        @include min(1200){
+            height: 612px;
+        }
+        @include min(1360){
+            height: 695px;
+        }
+        @include min(1440){
+            height: 733px;
+        }
+        @include min(1600){
+            height: 768px;
+        }
+        @include min(1700){
+            height: 979px;
+        }
+    }
+    .bannerText{
+        @include min(1700){
+            padding-top: 220px;
+        }
+        a{
+            margin: auto;
+        }
+    }
+    .bannerText p{
+        font-size: 87px;
+        line-height: 104px;
+        color: #fff;
+        text-align: center;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding-bottom: 30px;
+        @include max(1199){
+            font-size: 70px;
+            line-height: 80px;
+        }
+        @include max(768){
+            font-size: 50px;
+            line-height: 60px;
+        }
+        @include max(767){
+            font-size: 35px;
+            line-height: 40px;
+        
+        }
+    }
+}
+a.btn,button {
+    width: 197px;
+    background-color: #fff;
+    height: 54px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    justify-content: center;
+    border: unset;
+
+    &:hover,&:focus,&:focus-visible,&:active{
+        background-color: $secondaryColor!important;
+        color: #fff!important;
+    }
+    @include max(768){
+        width: 150px;
+        height: 40px;
+    }
+    @include max(767){
+            width: 150px;
+            height: 40px;
+    }
+}

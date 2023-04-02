@@ -1,0 +1,36 @@
+:root {
+  // Font Family
+  --font-primary: "Montserrat";
+  --font-secondary: "Montserrat";
+  /* Font Family */
+  --global--font-family-primary: var(
+    --font-primary,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif
+  );
+  --global--font-family-secondary: var(
+    --font-secondary,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif
+  );
+
+  // Colors
+  --global--color-black: #252525;
+  --global--color-white: #fff;
+  --global--color-border: #dbdbdb;
+  --global--color-table-grey:#f1f8ff;
+  --global--color-grey: #999999;
+
+  // Elevation
+  --global--shadow-black-20: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  --global--shadow-black-10: 0px 1px 10px rgba(0, 0, 0, 0.1);
+
+  // Opacity/Transparency
+  --global--opacity-black-20: rgba(0, 0, 0, 0.2);
+  --global--opacity-black-50: rgba(0, 0, 0, 0.5);
+  --global--opacity-black-80: rgba(0, 0, 0, 0.8);
+  --global--opacity-white-30: rgba(255, 255, 255, 0.3);
+  --global--opacity-white-50: rgba(255, 255, 255, 0.5);
+}

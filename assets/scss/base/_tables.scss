@@ -1,0 +1,201 @@
+// Table Styles
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 100%;
+  tr,
+  th,
+  td {
+    vertical-align: middle;
+  }
+  thead {
+    tr {
+      background-color: --global--color-table-grey;
+      color: #26344c;
+      th {
+        background-color: var(--global--color-fill);
+        text-align: center;
+        color: $white;
+        @include fontSize(11px);
+        font-weight: $fw-500;
+        height: 46px;
+        @include min(340){
+          @include fontSize(13px);
+        }
+        @include min(575){
+          @include fontSize(18px);
+        }
+        a {
+          color: inherit !important;
+          text-decoration: underline !important;
+          &:hover {
+            text-decoration: none !important;
+          }
+        }
+        @include min(1600) {
+          @include fontSize(20px);
+        }
+      }
+      &:first-child th:first-child{
+        border-radius: 10px 0px 0px 0px;
+      }
+      &:first-child th:last-child{
+        border-radius: 0px 10px 0px 0px;
+      }
+    }
+  }
+  tbody {
+    
+    tr {
+      background-color: $white;
+      &:nth-child(odd) {
+        background-color: var(--global--color-table-grey);
+      }
+      th{
+        background-color: var(--global--color-fill);
+        color: $white;
+        font-size: 20px;
+      }
+      td{
+        text-align: center;
+      }
+      td:first-child{
+        padding: 10px;
+       @include min(565){
+        padding: 15px 15px 15px 15px;
+       }
+        @include min(1024){
+          padding: 20px 15px 20px 15px;
+        }
+        @include min(1200){
+          padding: 18px 0px 18px 38px;
+        }
+        text-align: left;
+      }
+    }
+  }
+
+  th{
+    padding: 15px 5px;
+
+   @include min(565){
+    padding: 20px 10px;
+   }
+   @include min(1024){
+    padding: 20px 15px;
+   }
+  }
+  td,
+  th {
+    @include fontSize(11px);
+   @include min(330){
+    @include fontSize(14px);
+   }
+    height: auto !important;
+      border-right: 1px solid #d3e0ed;
+      &:last-child{
+        border: unset;
+      }
+
+    &.none {
+      height: 10px !important;
+      padding: 0 10px;
+    }
+    a {
+      color: var(--global--color-primary) !important;
+      display: inline;
+      &:hover {
+        color: var(--global--color-secondary) !important;
+        text-decoration: underline !important;
+      }
+    }
+    @include min(1600) {
+      @include fontSize(17px);
+    }
+  }
+  th {
+    color: var(--global--color-primary);
+    font-weight: $fw-600;
+    height: 34px;
+  }
+}
+table:not([class]),
+table[class=""] {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  td {
+    min-height: 30px;
+  }
+}
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  table {
+    td,
+    th {
+      border: 1px solid var(--global--color-border);
+    }
+    th {
+      padding-left: 15px;
+    }
+  }
+}
+
+.table-responsive > .table-bordered {
+  border: 0;
+}
+.ui-datepicker-calendar {
+  td,
+  th {
+    padding: 8px 10px;
+  }
+  thead {
+    tr {
+      background-color: darken($primaryColor, 7%);
+      th {
+        @include fontSize(15px);
+      }
+    }
+  }
+  tbody {
+    tr {
+      background: var(--global--color-white) !important;
+    }
+  }
+}
+.ui-datepicker {
+  @include box-shadow(0, 0, 15px, rgba($black, 0.2));
+  .ui-datepicker-header {
+    background-color: darken($primaryColor, 5%);
+    color: var(--global--color-white);
+    height: 42px;
+    @include align-items(center);
+    display: flex !important;
+    @include justify-content(center);
+  }
+  .ui-datepicker-prev {
+    @include order(1);
+    margin-right: auto;
+    padding-left: 15px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .ui-datepicker-title {
+    @include order(2);
+  }
+  .ui-datepicker-next {
+    @include order(3);
+    margin-left: auto;
+    padding-right: 15px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

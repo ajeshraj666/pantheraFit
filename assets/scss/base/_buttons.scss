@@ -1,0 +1,48 @@
+.btnpenta {
+    width: fit-content;
+    padding: 15px 30px;
+    height: 70px;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight:  $fw-500;
+    font-size: 20px;
+    color: $white;
+    line-height: 40px;
+
+    @include min(1200){
+        @include fontSize(18px);
+        padding: 12px 30px;
+        line-height: 36px;
+        height: 60px;
+    }
+    @include max(1199){
+    padding: 10px 25px;
+    height: auto;
+    line-height: 36px;
+    font-size: 18px;
+    }
+    @include max(767){
+        padding: 6px 15px;
+        height: auto;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    @include max(360){
+    line-height: 26px;
+    font-size: 13px;
+    }
+    @include max(360){
+        line-height: 24px;
+        font-size: 12px;
+        }
+
+&.btnWhite {
+    background-color: $white;
+    font-weight:  $fw-500;
+    
+}
+&:hover{
+    background-color: $primaryColor;
+    color: $white;
+}
+}

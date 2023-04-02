@@ -1,0 +1,406 @@
+.curP {
+  cursor: pointer;
+}
+.dFlex {
+  @include flexbox();
+}
+.m-l-auto {
+  margin-left: auto;
+}
+.m-t-auto {
+  margin-top: auto;
+}
+.vhCenter {
+  @include flex-align(vhCenter);
+}
+.vCenter {
+  @include flex-align(vCenter);
+}
+.hCenter {
+  @include flex-align(hCenter);
+}
+.vBottom {
+  @include flex-align(vBottom);
+}
+.hRight {
+  @include flex-align(hRight);
+}
+.vCenHRight {
+  @include flex-align(vCenHRight);
+}
+.vhEnd {
+  @include flex-align(vhEnd);
+}
+.vBtmHcntr {
+  @include align-items(end);
+  @include flexbox();
+  @include justify-content(center);
+}
+.jc-center {
+  @include justify-content(center);
+}
+.no-wrap {
+  @include flex-wrap(nowrap);
+}
+.align-center {
+  @include justify-content(center);
+}
+.grecaptcha-badge {
+  display: none !important;
+}
+.center {
+  @include justify-content(center);
+  text-align: center;
+  .btn {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.cmn-space {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  @include min(768) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  @include min(1200) {
+    padding-bottom: 55px;
+    padding-top: 55px;
+  }
+  @include min(1600) {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+  @include max(1199) {
+    &.elementor-section {
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+  }
+}
+.bottom-space {
+  padding-bottom: 30px;
+  @include min(768) {
+    padding-bottom: 40px;
+  }
+  @include min(1200) {
+    padding-bottom: 55px;
+  }
+  @include min(1600) {
+    padding-bottom: 70px;
+  }
+  @include max(1199) {
+    &.elementor-section {
+      padding-bottom: 15px;
+    }
+  }
+}
+.clear {
+  clear: both;
+  display: block;
+}
+#content_wrapper {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.bg-primary {
+  background-color: var(--global--color-primary);
+}
+.text-primary {
+  color: var(--global--color-primary) !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    color: inherit !important;
+    a {
+      color: inherit !important;
+      &:hover {
+        color: var(--global--color-black) !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.text-secondary {
+  color: var(--global--color-secondary);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    color: inherit !important;
+    a {
+      color: inherit !important;
+      &:hover {
+        color: var(--global--color-primary) !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.text-white {
+  color: var(--global--color-white) !important;
+  p,
+  li,
+  a,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote {
+    color: inherit !important;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: underline !important;
+    &:hover {
+      color: var(--global--color-primary) !important;
+      text-decoration: none !important;
+    }
+  }
+  a[href^="tel"] {
+    text-decoration: none !important;
+    &:hover {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+  }
+}
+.text-black {
+  color: var(--global--color-black) !important;
+  p,
+  li,
+  a,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote {
+    color: inherit !important;
+  }
+  a {
+    color: inherit !important;
+    &:hover {
+      color: var(--global--color-secondary) !important;
+      text-decoration: none !important;
+    }
+  }
+}
+.m-b-0 {
+  margin-bottom: 0 !important;
+}
+.m-t-0 {
+  margin-top: 0 !important;
+}
+.m-b-5 {
+  margin-bottom: 5px !important;
+}
+.m-b-10 {
+  margin-bottom: 10px !important;
+}
+.p-b-0 {
+  padding-bottom: 0 !important;
+}
+.p-t-0 {
+  padding-top: 0 !important;
+}
+.p-b-10 {
+  padding-bottom: 10px !important;
+}
+.p-t-10 {
+  padding-top: 10px !important;
+}
+.p-b-20 {
+  padding-bottom: 20px !important;
+}
+.p-l-0 {
+  padding-left: 0 !important;
+}
+.no-border {
+  border: 0 !important;
+}
+.slick-prev,
+.slick-next {
+  background-color: transparent;
+  @include flex-align(vhCenter);
+  height: 28px;
+  width: 28px;
+  z-index: 5;
+  top: 98%;
+  &:before {
+    background-color: transparent;
+    border-right: 2px solid var(--global--color-white);
+    border-top: 2px solid var(--global--color-white);
+    content: "";
+    height: 10px;
+    opacity: 1;
+    width: 10px;
+  }
+  &:hover {
+    background-color: transparent;
+    &:before {
+      border-right-color: var(--global--color-white);
+      border-top-color: var(--global--color-white);
+    }
+  }
+  &:active,
+  &:focus {
+    background-color: transparent;
+    &:before {
+      border-right-color: var(--global--color-white);
+      border-top-color: var(--global--color-white);
+    }
+  }
+  @include min(768) {
+    height: 50px;
+    width: 50px;
+    &:before {
+      height: 22px;
+      width: 22px;
+    }
+  }
+  @include min(1600) {
+    height: 50px;
+    width: 50px;
+    &:before {
+      border-width: 3px;
+      border-radius: 0px 6px 0px 0px;
+      height: 25px;
+      width: 25px;
+      
+    }
+  }
+  @include max(767) {
+    display: none !important;
+  }
+}
+.slick-prev {
+  left: 0px;
+  &:before {
+    @include rotate(-135deg);
+  }
+  @include min(768) {
+    left: 0px;
+    &:before {
+      margin-left: 5px;
+    }
+  }
+  @include min(1600) {
+    left: 0px;
+    &:before {
+      margin-left: 7px;
+    }
+  }
+  @include min(1850) {
+    left: 0px;
+    &:before {
+      margin-left: 7px;
+    }
+  }
+}
+.slick-next {
+  right: 21%;
+  &:before {
+    @include rotate(45deg);
+  }
+  @include min(768) {
+    right: 21%;
+    &:before {
+      margin-right: 5px;
+    }
+  }
+  @include min(1600) {
+    right: 21%;
+    &:before {
+      margin-right: 7px;
+    }
+  }
+  @include min(1850) {
+    right: 21%;
+    &:before {
+      margin-right: 7px;
+    }
+  }
+}
+.slick-dots {
+  li {
+
+    button {
+      padding: 0;
+      position: relative;
+      &:before {
+        background-color: $secondaryColor;
+        @include border-radius(4px);
+        content: "";
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        left: 0;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+       border-radius: 10px;
+      }
+      @include min(1600) {
+        height: 4px;
+        width: 18px;
+      }
+    }
+    &.slick-active {
+      
+      margin-right: 30px;
+      button {
+       
+        &:before {
+          background-color: $primaryColor;
+          width: 30px;
+          height: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  @include max(1199) {
+    bottom: -10px;
+  }
+}
+.slick-slide {
+  text-align: center;
+  &:active,
+  &:focus {
+    appearance: none;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: none;
+  }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.tw-row {
+  @include flexbox();
+  margin-left: -10px;
+  margin-right: -10px;
+}
+[class*="tw-col-"] {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  width: 100%;
+}
