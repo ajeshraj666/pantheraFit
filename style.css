@@ -3674,7 +3674,7 @@ header .mob-btn span {
     transform: translateX(-130%);
     height: auto;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7882352941);
+    background-color: rgba(255, 255, 255, 0.9019607843);
     text-align: center;
     padding: 50px 0px;
     transition: transform ease 0.3s;
@@ -4340,7 +4340,7 @@ main.inner p {
   content: "";
   position: absolute;
   left: 0;
-  background-image: url(/assets/images/Tick-Icon.svg);
+  background-image: url(./assets/images/Tick-Icon.svg);
   background-size: cover;
   width: 24px;
   height: 24px;
@@ -4449,7 +4449,7 @@ main.inner p {
   content: "";
   position: absolute;
   left: -37px;
-  background-image: url(/assets/images/Dumbell-Icon.svg);
+  background-image: url(./assets/images/Dumbell-Icon.svg);
   background-size: cover;
   width: 30px;
   height: 30px;
@@ -4669,7 +4669,7 @@ main.inner p {
 .benefitsPackages ul li:before {
   content: "";
   position: absolute;
-  background-image: url(/assets/images/Tick-Icon2.svg);
+  background-image: url(./assets/images/Tick-Icon2.svg);
   background-size: cover;
   width: 25px;
   height: 25px;
@@ -4712,7 +4712,7 @@ main.inner p {
 .registerForm {
   background-color: #e7e7e7;
   padding: 50px 0px;
-  background-image: url(/assets/images/Panther-Overlay.png);
+  background-image: url(./assets/images/Panther-Overlay.png);
   background-size: 28%;
   background-repeat: no-repeat;
   background-position: 10%;

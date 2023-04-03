@@ -157,7 +157,7 @@ main.packages{
                 content: '';
                 position: absolute;
                 left: 0;
-                background-image: url(/assets/images/Tick-Icon.svg);
+                background-image: url(./assets/images/Tick-Icon.svg);
                 background-size: cover;
                 width: 24px;
                 height: 24px;
@@ -239,7 +239,7 @@ main.packages{
             content: '';
             position: absolute;
             left: -37px;
-            background-image: url(/assets/images/Dumbell-Icon.svg);
+            background-image: url(./assets/images/Dumbell-Icon.svg);
             background-size: cover;
             width: 30px;
             height: 30px;
@@ -403,7 +403,7 @@ main.packages{
             &:before{
                 content: '';
                 position: absolute;
-                background-image: url(/assets/images/Tick-Icon2.svg);
+                background-image: url(./assets/images/Tick-Icon2.svg);
                 background-size: cover;
                 width: 25px;
                 height: 25px;
@@ -455,7 +455,7 @@ main.packages{
     @include min(1601){
         padding: 100px 0px;
     }
-    background-image: url(/assets/images/Panther-Overlay.png);
+    background-image: url(./assets/images/Panther-Overlay.png);
     background-size: 28%;
     background-repeat: no-repeat;
     background-position: 10%;
