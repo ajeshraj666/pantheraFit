@@ -36,17 +36,17 @@
 }
 @font-face {
   font-family: "MyriadPro";
-  src: url(./assets/fonts/myriadpro-regular.woff);
+  src: url(./assets/fonts/myriadpro-regular.woff) format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "MyriadPro";
-  src: url(./assets/fonts/myriadpro-semi.woff);
+  src: url(./assets/fonts/myriadpro-semi.woff) format("woff");
   font-weight: 500;
 }
 @font-face {
   font-family: "MyriadPro";
-  src: url(./assets/fonts/myriadpro-bold.woff);
+  src: url(./assets/fonts/myriadpro-bold.woff) format("woff");
   font-weight: 600;
 }
 h1 {
