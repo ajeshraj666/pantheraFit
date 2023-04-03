@@ -158,3 +158,95 @@ a.btn,button {
         }
     }
 }
+
+
+
+
+.bannerSectionPackages{
+    margin-top: 60px;
+    @include min(768){
+        margin-top:131px;
+    }
+    @include min(992){
+        margin-top: 80px;
+    }
+    @include min(1200){
+        margin-top: 139px;
+    }
+    @include min(1440){
+        margin-top: 139px;
+    }
+    @include min(1600){
+        margin-top: 143px;
+    }
+    article{
+        background-size: cover;
+        background-position: center center;
+        p{
+            font-size: 18px;
+            font-weight: $fw-600;
+            @include min(1200){
+                font-size: 18px;
+            }
+            @include min(1360){
+                font-size: 22px;
+            }
+            @include min(1440){
+                font-size: 29px;
+            }
+            @include min(1600){
+                font-size: 35px;
+            }
+        }
+    }
+    .bannerText{
+        height: 236px;
+        @include min(992){
+            height: 320px;
+        }
+        @include min(1200){
+            height: 375px;
+        }
+        @include min(1360){
+            height: 424px;
+        }
+        @include min(1440){
+            height: 449px;
+        }
+        @include min(1500){
+            height: 499px;
+        }
+        @include min(1601){
+            height: 595px;
+        }
+        color: $white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase;
+
+    }
+    h1{
+      
+        @include min(1024){
+            font-size: 50px!important;
+        }
+        @include min(1360){
+            font-size: 60px!important;
+        }
+        @include min(1440){
+            font-size: 80px!important;
+        }
+        @include min(1600){
+            font-size: 95px!important;
+            line-height: 90px;
+        }
+        br{
+            @include max(991){
+                display: none;
+            }
+        }
+    }
+
+}

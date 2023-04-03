@@ -48,7 +48,7 @@ let menu = document.querySelector('.menu-wrapper')
 
 
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 80) {
+    if ($(this).scrollTop() > 100) {
        $('header').addClass('fixedHead');
     } else {
        $('header').removeClass('fixedHead');

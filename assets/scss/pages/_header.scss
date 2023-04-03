@@ -104,6 +104,7 @@ header{
 
 		&.fixedHead{
 			.row{
+				transition: 0.5s ease all;
 				@include min(1200){
 					height: 80px;
 
@@ -114,13 +115,14 @@ header{
 				}
 			}
 			.menu-wrapper ul.menu a{
+				transition: 0.5s ease all;
 				@include min(1200){
 					height: 95px;
 				}
 				@include min(1700){
 					height: 98px;
 				}
-				transition: 0.3s ease all;
+				transition: 0.5s ease all;
 
 			}
 			
@@ -128,8 +130,10 @@ header{
 				@include min(1200){
 				width: 70%;
 				transition: 0.3s ease all;
+				}
 			}
-			}
+			transition: 0.3s ease all;
+
 		}
 		
 	}
@@ -307,4 +311,6 @@ header{
 			}
 		}
   	}
+
+
 

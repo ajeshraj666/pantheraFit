@@ -3586,6 +3586,12 @@ header .brand img {
   transition: 0.3s ease all;
   width: 100%;
 }
+header.fixedHead {
+  transition: 0.3s ease all;
+}
+header.fixedHead .row {
+  transition: 0.5s ease all;
+}
 @media (min-width: 1200px) {
   header.fixedHead .row {
     height: 80px;
@@ -3597,7 +3603,8 @@ header .brand img {
   }
 }
 header.fixedHead .menu-wrapper ul.menu a {
-  transition: 0.3s ease all;
+  transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 @media (min-width: 1200px) {
   header.fixedHead .menu-wrapper ul.menu a {
@@ -3993,67 +4000,125 @@ a.btn:hover, a.btn:focus, a.btn:focus-visible, a.btn:active, button:hover, butto
   }
 }
 
-.bannerSectionInner article {
-  background-size: cover;
+.bannerSectionPackages {
+  margin-top: 60px;
 }
-@media (max-width: 767px) {
-  .bannerSectionInner article {
-    background-position: 80%;
+@media (min-width: 768px) {
+  .bannerSectionPackages {
+    margin-top: 131px;
   }
 }
-.bannerSectionInner .bannerText {
-  height: 200px;
-  display: flex;
-  align-items: center;
+@media (min-width: 992px) {
+  .bannerSectionPackages {
+    margin-top: 80px;
+  }
 }
-@media (min-width: 1360px) {
-  .bannerSectionInner .bannerText {
-    height: 280px;
+@media (min-width: 1200px) {
+  .bannerSectionPackages {
+    margin-top: 139px;
   }
 }
 @media (min-width: 1440px) {
-  .bannerSectionInner .bannerText {
-    height: 300px;
+  .bannerSectionPackages {
+    margin-top: 139px;
   }
 }
 @media (min-width: 1600px) {
-  .bannerSectionInner .bannerText {
-    height: 333px;
+  .bannerSectionPackages {
+    margin-top: 143px;
   }
 }
-@media (min-width: 1700px) {
-  .bannerSectionInner .bannerText {
-    height: 400px;
+.bannerSectionPackages article {
+  background-size: cover;
+  background-position: center center;
+}
+.bannerSectionPackages article p {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (min-width: 1200px) {
+  .bannerSectionPackages article p {
+    font-size: 18px;
   }
 }
-.bannerSectionInner .bannerText h1 {
+@media (min-width: 1360px) {
+  .bannerSectionPackages article p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1440px) {
+  .bannerSectionPackages article p {
+    font-size: 29px;
+  }
+}
+@media (min-width: 1600px) {
+  .bannerSectionPackages article p {
+    font-size: 35px;
+  }
+}
+.bannerSectionPackages .bannerText {
+  height: 236px;
   color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   text-transform: uppercase;
-  font-size: 30px !important;
 }
-@media (min-width: 768px) {
-  .bannerSectionInner .bannerText h1 {
-    font-size: 30px !important;
+@media (min-width: 992px) {
+  .bannerSectionPackages .bannerText {
+    height: 320px;
+  }
+}
+@media (min-width: 1200px) {
+  .bannerSectionPackages .bannerText {
+    height: 375px;
+  }
+}
+@media (min-width: 1360px) {
+  .bannerSectionPackages .bannerText {
+    height: 424px;
+  }
+}
+@media (min-width: 1440px) {
+  .bannerSectionPackages .bannerText {
+    height: 449px;
+  }
+}
+@media (min-width: 1500px) {
+  .bannerSectionPackages .bannerText {
+    height: 499px;
+  }
+}
+@media (min-width: 1601px) {
+  .bannerSectionPackages .bannerText {
+    height: 595px;
   }
 }
 @media (min-width: 1024px) {
-  .bannerSectionInner .bannerText h1 {
-    font-size: 35px !important;
-  }
-}
-@media (min-width: 1360px) {
-  .bannerSectionInner .bannerText h1 {
-    font-size: 40px !important;
-  }
-}
-@media (min-width: 1440px) {
-  .bannerSectionInner .bannerText h1 {
+  .bannerSectionPackages h1 {
     font-size: 50px !important;
   }
 }
+@media (min-width: 1360px) {
+  .bannerSectionPackages h1 {
+    font-size: 60px !important;
+  }
+}
+@media (min-width: 1440px) {
+  .bannerSectionPackages h1 {
+    font-size: 80px !important;
+  }
+}
 @media (min-width: 1600px) {
-  .bannerSectionInner .bannerText h1 {
-    font-size: 67px !important;
+  .bannerSectionPackages h1 {
+    font-size: 95px !important;
+    line-height: 90px;
+  }
+}
+@media (max-width: 991px) {
+  .bannerSectionPackages h1 br {
+    display: none;
   }
 }
 
@@ -4280,108 +4345,6 @@ main.inner p {
   }
 }
 
-.bannerSectionPackages article {
-  background-size: cover;
-  background-position: center center;
-}
-.bannerSectionPackages article p {
-  font-size: 18px;
-  font-weight: 600;
-}
-@media (min-width: 1200px) {
-  .bannerSectionPackages article p {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1360px) {
-  .bannerSectionPackages article p {
-    font-size: 22px;
-  }
-}
-@media (min-width: 1440px) {
-  .bannerSectionPackages article p {
-    font-size: 29px;
-  }
-}
-@media (min-width: 1600px) {
-  .bannerSectionPackages article p {
-    font-size: 35px;
-  }
-}
-.bannerSectionPackages .bannerText {
-  height: 236px;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  text-transform: uppercase;
-}
-@media (min-width: 992px) {
-  .bannerSectionPackages .bannerText {
-    height: 320px;
-  }
-}
-@media (min-width: 1200px) {
-  .bannerSectionPackages .bannerText {
-    height: 375px;
-  }
-}
-@media (min-width: 1360px) {
-  .bannerSectionPackages .bannerText {
-    height: 424px;
-  }
-}
-@media (min-width: 1440px) {
-  .bannerSectionPackages .bannerText {
-    height: 449px;
-  }
-}
-@media (min-width: 1500px) {
-  .bannerSectionPackages .bannerText {
-    height: 499px;
-  }
-}
-@media (min-width: 1601px) {
-  .bannerSectionPackages .bannerText {
-    height: 595px;
-  }
-}
-.bannerSectionPackages h1 {
-  font-size: 30px !important;
-}
-@media (min-width: 768px) {
-  .bannerSectionPackages h1 {
-    font-size: 30px !important;
-  }
-}
-@media (min-width: 1024px) {
-  .bannerSectionPackages h1 {
-    font-size: 50px !important;
-  }
-}
-@media (min-width: 1360px) {
-  .bannerSectionPackages h1 {
-    font-size: 60px !important;
-  }
-}
-@media (min-width: 1440px) {
-  .bannerSectionPackages h1 {
-    font-size: 80px !important;
-  }
-}
-@media (min-width: 1600px) {
-  .bannerSectionPackages h1 {
-    font-size: 95px !important;
-    line-height: 90px;
-  }
-}
-@media (max-width: 991px) {
-  .bannerSectionPackages h1 br {
-    display: none;
-  }
-}
-
 .reachYourHealth {
   padding: 50px 0px;
   background-color: #000;
@@ -4549,6 +4512,11 @@ main.inner p {
 }
 .programsList .row {
   justify-content: space-around;
+}
+@media (max-width: 991px) {
+  .programsList .row:last-child div:last-child article {
+    padding: 0;
+  }
 }
 .programsList .row:first-child {
   padding-bottom: 0px;
@@ -4873,6 +4841,12 @@ main.inner p {
     padding: 100px 0px;
   }
 }
+@media (max-width: 768px) {
+  .registerForm {
+    background-position: center center;
+    background-size: 50%;
+  }
+}
 .registerForm input {
   width: 100%;
   border: unset;
@@ -4935,6 +4909,7 @@ body {
   font-size: 20px;
   line-height: 40px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .welcomeSection {
