@@ -1,5 +1,8 @@
 header{
 	background-color: #fff;
+	position: fixed;
+    width: 100%;
+	z-index: 5;
 	@include max(1199){
 		display: flex;
 		align-items: center;
@@ -94,7 +97,41 @@ header{
 				border-radius:4px;
 			}
 		}
+		.brand img{
+			transition: 0.3s ease all;
+			width: 100%;
+		}
 
+		&.fixedHead{
+			.row{
+				@include min(1200){
+					height: 80px;
+
+				}
+				@include min(1600){
+					height: 100px;
+
+				}
+			}
+			.menu-wrapper ul.menu a{
+				@include min(1200){
+					height: 95px;
+				}
+				@include min(1700){
+					height: 98px;
+				}
+				transition: 0.3s ease all;
+
+			}
+			
+			.brand img {
+				@include min(1200){
+				width: 70%;
+				transition: 0.3s ease all;
+			}
+			}
+		}
+		
 	}
 	.menu-wrapper{
 		a{

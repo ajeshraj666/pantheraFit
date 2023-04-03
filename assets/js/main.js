@@ -47,3 +47,10 @@ let menu = document.querySelector('.menu-wrapper')
 
 
 
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 80) {
+       $('header').addClass('fixedHead');
+    } else {
+       $('header').removeClass('fixedHead');
+    }
+});
